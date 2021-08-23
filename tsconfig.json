@@ -1,0 +1,35 @@
+{
+    "version": "1.8.0",
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "es2016",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "outDir": "bin",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": ["es2016", "esnext.asynciterable"],
+        "esModuleInterop": true,
+        "typeRoots": ["node_modules/@types"],
+        "baseUrl": ".",
+        "paths": {
+            "*": ["node_modules/*", "node_modules/@types/*", "spec/*"]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "bin",
+        ".build",
+        ".serverless/**/*",
+        ".webpack/**/*",
+        "_warmup/**/*",
+        "*.config.js",
+        "**/*.js"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "bcg-backend-coding-challenge",
+  "version": "1.0.0",
+  "description": "bcg backend coding challenge",
+  "scripts": {
+    "build": "rm -rf bin && tsc",
+    "test": "npm run build && jasmine"
+  },
+  "author": "Warin Winnicke",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.7.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.6.9",
+    "jasmine": "^3.8.0",
+    "typescript": "^3.8.3"
+  }
+}
