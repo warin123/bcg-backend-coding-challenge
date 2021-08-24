@@ -1,0 +1,26 @@
+service: bcg-coding
+
+frameworkVersion: "2"
+
+provider:
+    name: aws
+    runtime: nodejs14.x
+    region: eu-central-1
+    lambdaHashingVersion: 20201221
+
+plugins:
+    - serverless-plugin-typescript
+    - serverless-offline
+
+package:
+    individually: true
+    excludeDevDependencies: true
+
+functions:
+    checkout:
+        handler: api/checkout/checkout.handler
+        description: checkout
+        events:
+            - http:
+                  path: checkout
+                  method: post
